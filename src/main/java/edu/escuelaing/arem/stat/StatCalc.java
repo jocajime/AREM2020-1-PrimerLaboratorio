@@ -3,8 +3,18 @@ package edu.escuelaing.arem.stat;
 import edu.escuelaing.arem.util.LinkedList;
 import java.lang.Math;
 
+
+/**
+ * Esta clase efrece algunas funciones de calculo estadistico
+ * @author joelc
+ */
 public class StatCalc {
 
+    /**
+     * Funcion para calcular la media de unos valores dados.
+     * @param valores
+     * @return
+     */
     public static Double mean(LinkedList<Double> valores){
         Double suma = 0.0;
         for(Double i: valores){
@@ -16,6 +26,11 @@ public class StatCalc {
 
     }
 
+    /**
+     * Funcion para calcular la desviacion estandar de unos valores dados.
+     * @param valores
+     * @return
+     */
     public static Double stddev(LinkedList<Double> valores){
         Double suma = 0.0;
         Double mean = mean(valores);

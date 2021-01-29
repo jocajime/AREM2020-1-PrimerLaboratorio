@@ -5,6 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
+
+/**
+ * implementacion de un lista enlazada.
+ * @param <E> el tipo de elementos contenidos en la lista
+ */
 public class LinkedList<E> implements List<E> {
 
     private Node<E> first = null;
@@ -12,19 +17,31 @@ public class LinkedList<E> implements List<E> {
     int size = 0;
     private IteratorLinked iteratorLinked = new IteratorLinked(this);
 
+    /**
+     * @return el ultimo elemento de la lista
+     */
     public Node<E> getLast() {
         return last;
     }
 
+    /**
+     * @return el primer elemento de la lista
+     */
     public Node<E> getFirst() {
         return first;
     }
 
+    /**
+     * @return el tamaño de la lista (numero de elementos)
+     */
     @Override
     public int size() {
         return this.size;
     }
 
+    /**
+     * @return si esta vacia la lista
+     */
     @Override
     public boolean isEmpty() {
         return size == 0;
@@ -35,6 +52,9 @@ public class LinkedList<E> implements List<E> {
         return false;
     }
 
+    /**
+     * @return el iterador para esta lista
+     */
     @Override
     public Iterator<E> iterator() {
         return iteratorLinked;
@@ -50,6 +70,11 @@ public class LinkedList<E> implements List<E> {
         return null;
     }
 
+    /**
+     * funcion para añadir elemetos a la lista
+     * @param e elemento para añadir
+     * @return boleano que confirma que se añadio
+     */
     @Override
     public boolean add(E e) {
         Node nuevo = new Node(e);
@@ -85,6 +110,11 @@ public class LinkedList<E> implements List<E> {
         return false;
     }
 
+    /**
+     * remueve todos los elementos
+     * @param c
+     * @return
+     */
     @Override
     public boolean removeAll(Collection<?> c) {
         first = null;
