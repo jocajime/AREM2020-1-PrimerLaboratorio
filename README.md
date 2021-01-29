@@ -32,6 +32,10 @@ Para Ejecutar las pruebas del programa, en el directorio ejecutamos nuestro shel
 * [Maven](https://maven.apache.org/)
 * [Java](https://www.java.com/es/)
 
+## Construido con 🛠️
+ 
+Para ver la documentacion del proyecto podemos ingresar a Resources y abrir index.html en el navegador de nuestra preferencia.
+
 ## Autores ✒️
 
 * [**Joel Carvajal**](https://www.linkedin.com/in/joel-carvajal/)
